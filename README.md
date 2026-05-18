@@ -1,6 +1,8 @@
 
 # Banco API - Documentação
 
+> **Nota:** Este repositório é um clone do projeto original criado pelo professor [Júlio de Lima](https://github.com/juliodelimas), utilizado para estudos do curso **Mentoria 2.0**.
+
 ## Visão Geral
 
 O projeto é composto por duas APIs independentes que oferecem suporte a operações financeiras, com uma arquitetura baseada em REST e GraphQL.
