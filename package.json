@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test-rest": "mocha ./test/rest/**/*.test.js --timeout 200000",
-    "test-graphql": "mocha ./test/graphql/**/*.test.js --timeout 200000",
+    "test-rest": "mocha ./test/rest/**/*.test.js --timeout 200000 --reporter mochawesome",
+    "test-graphql": "mocha ./test/graphql/**/*.test.js --timeout 200000 --reporter mochawesome",
     "rest-api": "node rest/app.js",
     "graphql-api": "node graphql/app.js"
   },
@@ -28,6 +28,7 @@
   "devDependencies": {
     "chai": "^6.2.2",
     "mocha": "^11.3.0",
+    "mochawesome": "^7.1.4",
     "supertest": "^7.2.2"
   }
 }
