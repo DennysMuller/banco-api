@@ -300,6 +300,7 @@ describe('Regras para realizar transferência', () => {
         expect(resposta.body.page).to.be.equal(1);
         expect(resposta.body.page).to.be.a('number');
         expect(resposta.body.limit).to.be.equal(10);
+        expert(resposta.body.transferencias).to.have.lengthOf(10);
         expect(resposta.body.limit).to.be.a('number');
       })
     
