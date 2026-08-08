@@ -4,6 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test-rest": "mocha ./test/rest/**/*.test.js --timeout 200000 --reporter mochawesome",
+    "test-k6-rest": "powershell -Command \"Get-ChildItem -Path test\\k6\\rest -Recurse -Filter *.test.js | ForEach-Object { k6 run $_.FullName }\"",
     "test-graphql": "mocha ./test/graphql/**/*.test.js --timeout 200000 --reporter mochawesome",
     "rest-api": "node rest/app.js",
     "graphql-api": "node graphql/app.js"
