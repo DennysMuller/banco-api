@@ -1,8 +1,8 @@
-# Testes de Performance — urBanco API (K6)
+# Testes de Performance — Banco API (K6)
 
 ## Introdução
 
-Este diretório reúne os testes de performance da **urBanco API (REST)**, escritos em JavaScript e executados com o [Grafana K6](https://grafana.com/docs/k6/latest/).
+Este diretório reúne os testes de performance da **Banco API (REST)**, escritos em JavaScript e executados com o [Grafana K6](https://grafana.com/docs/k6/latest/).
 
 Os testes avaliam o comportamento dos endpoints de **login** e **transferências** sob diferentes perfis de carga (iterações fixas, usuários virtuais constantes e rampas com `stages`), validando respostas com `checks` e critérios de aceite de desempenho com `thresholds` (taxa de erro e tempo de resposta: média, máximo, p90 e p95).
 
