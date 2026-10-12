@@ -1,4 +1,4 @@
-/* 
+/* https://grafana.com/docs/k6/latest/using-k6/environment-variables/
 export function obterBaseURL() {
   return __ENV.BASE_URL || 'http://localhost:3000';
 } 
