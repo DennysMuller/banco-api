@@ -1,7 +1,7 @@
 const express = require('express');
 const swaggerUi = require('swagger-ui-express');
 const swaggerDocument = require('./config/swagger');
-require('dotenv').config();
+require('dotenv').config({ path: require('path').resolve(__dirname, '../.env') });
 
 const loginRoutes = require('./routes/loginRoutes');
 const transferenciaRoutes = require('./routes/transferenciaRoutes');
